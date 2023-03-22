@@ -4,7 +4,7 @@ class GUI {
         this.xml = null;
     }
     sortStates(estados) {
-        let array = Array.prototype.slice.call(estados, 0);
+        let array = Array.from(estados);
         array.sort((a, b) => {
             let aState = a.getAttribute("name");
             let bState = b.getAttribute("name");
